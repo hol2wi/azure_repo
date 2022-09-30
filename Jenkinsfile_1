@@ -15,6 +15,10 @@ pipeline {
                 sleep(time: 10, unit: "SECONDS") 
             }
         }
-         
+     stage('Wait_10s') {
+            steps {
+                sleep(time: 10, unit: "SECONDS") 
+            }
+        }    
 }
 }
