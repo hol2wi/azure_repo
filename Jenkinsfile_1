@@ -5,20 +5,29 @@ pipeline {
         }
 }
     stages {
-        stage('Print_Hello') {
+        stage('Build') {
             steps {
-                echo 'Hello World_TEST' 
+                echo 'starting Build' 
             }
         }
+        
      stage('Wait_10s') {
             steps {
                 sleep(time: 10, unit: "SECONDS") 
             }
         }
-     stage('Wait_1_10s') {
+        
+        stage('Wait_1_10s') {
             steps {
                 sleep(time: 10, unit: "SECONDS") 
             }
-        }    
+        }
+        
+        stage('Test') {
+            steps {
+                echo 'Startin Test' 
+            }
+        }
+       
 }
 }
