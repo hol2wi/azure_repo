@@ -1,9 +1,7 @@
 pipeline {
-    agent {
-    node {
-        label 'SWSVW_AUTOSCRIPT'
-        }
-}
+
+     agent {label 'SWSVW_AUTOSCRIPT'}
+  
     stages {
         stage('Build') {
             steps {
